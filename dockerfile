@@ -6,8 +6,8 @@ FROM python:latest
 LABEL version="0.0.1"
 LABEL maintainer="craighawki@gmail.com"
 
-# Updating the working directory
-WORKDIR /usr/scr/app
+# Add a python script
+ADD webwords.py /
 
-# This last line is the actual command to run the Python script
-COPY webwords.py webwords.py
+# Execute the python script
+CMD [ "python", "./webwords.py" ]
