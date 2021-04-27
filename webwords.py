@@ -5,7 +5,7 @@ with urlopen('http://www.apple.com') as story:
     for line in story:
         line_words = line.decode('utf-8').split()
         for word in line_words:
-            if 'a' in word:
+            if 'the' in word:
                 Count += 1
                 story_words.append(word)
                 print(word[0:75])
