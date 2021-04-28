@@ -32,4 +32,8 @@ services:
       - database:db
       - distro
 
+volumes:
+  data:
+    external: true
+
 
