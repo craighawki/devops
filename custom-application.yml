@@ -14,4 +14,4 @@ services:
     ports:
       - "5432:5432"  
   volumes:
-    - ../dump:/tmp/
+      - ../dump:/tmp/
