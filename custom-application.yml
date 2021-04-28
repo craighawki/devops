@@ -13,5 +13,5 @@ services:
     container_name: postgres_db
     ports:
       - "5432:5432"  
-  volumes:
-      - ../dump:/tmp/
+    volumes:
+        - ../dump:/tmp/
