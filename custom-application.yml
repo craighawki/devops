@@ -9,7 +9,7 @@ services:
   
   
   database:
-    image: postgres: latest
+    image: postgres:latest
     container_name: postgres_db
     ports:
       - "5432:5432"  
